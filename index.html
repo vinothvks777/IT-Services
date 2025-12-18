@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VK-IT Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif}
+    body{background:radial-gradient(circle at top,#020617,#000);color:#fff}
+    header{position:fixed;width:100%;padding:16px 60px;background:rgba(2,6,23,.85);backdrop-filter:blur(10px);
+      display:flex;justify-content:space-between;align-items:center;z-index:100}
+    .logo{font-size:24px;font-weight:700}.logo span{color:#fbbf24}
+    nav a{color:#cbd5f5;margin-left:28px;text-decoration:none;font-weight:500}
+    nav a:hover{color:#fbbf24}
+    .hero{height:100vh;display:flex;justify-content:center;align-items:center}
+    .hero-box{background:rgba(17,24,39,.85);padding:50px;border-radius:22px;box-shadow:0 0 60px rgba(251,191,36,.15);
+      text-align:center;animation:float 6s ease-in-out infinite}
+    .hero h1{font-size:44px;margin-bottom:15px}
+    .hero p{color:#94a3b8;margin-bottom:25px}
+    .btn{padding:14px 36px;background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#000;border-radius:12px;text-decoration:none;font-weight:bold}
+    .services{padding:90px 60px;text-align:center}
+    .services h2{margin-bottom:40px}
+    .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+    .card{background:rgba(17,24,39,.9);padding:35px;border-radius:20px;transition:.4s;border:1px solid rgba(255,255,255,.05)}
+    .card:hover{transform:translateY(-12px) scale(1.03);box-shadow:0 0 35px rgba(251,191,36,.25)}
+    .card i{font-size:34px;color:#fbbf24;margin-bottom:18px}
+    .about{padding:90px;text-align:center;color:#cbd5f5}
+    .contact{padding:90px 60px;background:linear-gradient(135deg,#020617,#111827);text-align:center}
+    .contact-info p{margin:8px 0;color:#e5e7eb}
+    form{max-width:420px;margin:30px auto 0}
+    form input,form select,form textarea{width:100%;padding:14px;margin-bottom:15px;border-radius:10px;border:none;background:#020617;color:#fff}
+    form button{width:100%;padding:14px;background:linear-gradient(135deg,#f59e0b,#fbbf24);border:none;font-weight:bold;border-radius:10px;cursor:pointer}
+    footer{text-align:center;padding:18px;background:#020617;color:#94a3b8}
+    .whatsapp{position:fixed;bottom:25px;right:25px;background:#25d366;padding:15px 17px;border-radius:50%;color:#fff;font-size:26px;
+      box-shadow:0 0 20px rgba(0,0,0,.5);animation:pulse 2s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/919047400147" class="whatsapp" target="_blank" rel="noopener">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<header>
+  <div class="logo">VK-<span>IT</span> Services</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-box">
+    <h1>Next-Gen IT Solutions<br>for Growing Businesses</h1>
+    <p>Secure • Scalable • Professional IT Services</p>
+    <a href="#contact" class="btn">Request Service</a>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2>Our Core Services</h2>
+  <div class="service-grid">
+    <div class="card"><i class="fa-solid fa-server"></i><h3>Website Hosting</h3><p>Fast, secure & reliable cloud hosting.</p></div>
+    <div class="card"><i class="fa-solid fa-code"></i><h3>Website Designing</h3><p>Modern, responsive & SEO friendly.</p></div>
+    <div class="card"><i class="fa-solid fa-shield-halved"></i><h3>Cyber Security</h3><p>Advanced protection against cyber threats.</p></div>
+    <div class="card"><i class="fa-solid fa-network-wired"></i><h3>IT Consulting</h3><p>Enterprise grade IT consulting services.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Why VK-IT Services?</h2>
+  <p>We provide secure, scalable and future-ready IT solutions tailored for businesses of all sizes.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><i class="fa-solid fa-phone"></i> 9047400147</p>
+    <p><i class="fa-solid fa-envelope"></i> Vinothvks777@gmail.com</p>
+  </div>
+
+  <form
+    action="https://script.google.com/macros/s/AKfycbx6-Tq6S8z13cQv-jkXe6dj_3CrSQ138wcc4oSFzUPesstSmmztzc4T2vD4YLAHhmPBig/exec"
+    method="POST"
+  >
+    <input name="name" type="text" placeholder="Your Name" required>
+    <input name="email" type="email" placeholder="Email Address" required>
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Website Hosting</option>
+      <option>Website Designing</option>
+      <option>Cyber Security</option>
+      <option>IT Consulting</option>
+    </select>
+    <textarea name="message" placeholder="Describe your requirement" required></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+<footer>© 2025 VK-IT Services • All Rights Reserved</footer>
+</body>
+</html>
